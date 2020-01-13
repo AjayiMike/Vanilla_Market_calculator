@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+body {
+    background-color: #581845;
+    font-size: 17px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',  Verdana, 'sans-serif';
+}
+#container {
+    margin-top: 20px;
+    width: 300px;
+    height: 350px;
+    background: #c70039;
+    border-radius: 5px;
+    /*
+    the lines below ensures the calculator stays at the middle at all time
+    */
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+}
+#solar {
+    background: #4d0000;
+    border-radius: 3px;
+}
+#display {
+    background: #7a7a52;
+    border: 10px inset #c70039;
+}
+#display #in {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+}
+
+.btn {
+    border: none;
+    background-color: #daf7a6;
+    box-shadow: 1px 1px 4px gray;
+    transition: background-color 0.2s;
+    
+}
+.btn-func, .btn-operators {
+    background-color: #581845;
+    color: gray;
+
+}
+.btn-operators {
+    background-color: #ff5700; 
+    color: #000;
+}
+
+.btn-digits:active {
+    background-color: #000;
+    color: #daf7a6;
+}
+.btn-operators:active {
+    background-color: #000; 
+    color: #ff5700;
+}
+.btn-func:active {
+    background-color: #000;
+    color: #581845;
+}
+@media(min-width: 300px) and (max-width: 767px) {
+    #container {
+        width: 300px;
+        height: 350px;
+        border-radius: 5px;
+    }
+    #solar {
+        width: 60px;
+        height: 20px;
+        position: absolute;
+        right: 10px;
+        top: 25px;
+        border-radius: 3px;
+    }
+    #display {
+        width: 283px;
+        height: 80px;
+        position: absolute;
+        top: 55px;
+        left: 10px;
+        border-radius: 4px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    #display #in {
+        width: 280px;
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        padding: 0 10px 0 10px;
+    }
+    #display #out {
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+    }
+    #digits {
+        width:165px;
+        position: absolute;
+        top: 150px;
+        left: 10px;
+    }
+    #operation {
+        width: 115px;
+        position: absolute;
+        top: 195px;
+        right: 10px;
+    }
+    #mod {
+        width: 115px;
+        position: absolute;
+        top: 150px;
+        right: 10px;
+    }
+    #equalsBtn {
+        width: 105px;
+        position: absolute;
+        top: 285px;
+        right: 17px;
+    }
+    .btn {
+        width: 50px;
+        height: 40px;
+        margin-top: 5px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .btn-func, .btn-operators {
+        margin-left: 2px;
+    }
+    #equalsBtn, #zero {
+        width: 105px;
+    }
+}
+
+@media(min-width: 768px) {
+    #container {
+        width: 360px;
+        height: 420px;
+        border-radius: 5px;
+    }
+    #solar {
+        width: 120px;
+        height: 34px;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+        border-radius: 4px;
+    }
+    #display {
+        width: 340px;
+        height: 100px;
+        position: absolute;
+        top: 55px;
+        left: 10px;
+        border-radius: 4px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    #display #in {
+        width: 340px;
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        padding: 0 10px 0 10px;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+    }
+    #display #out {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+    #digits {
+        width:200px;
+        position: absolute;
+        top: 180px;
+        left: 10px;
+    }
+    #operation {
+        width: 136px;
+        position: absolute;
+        top: 238px;
+        right: 10px;
+        
+    }
+    #mod {
+        width: 136px;
+        position: absolute;
+        top: 180px;
+        right: 10px;
+    }
+    #equalsBtn {
+        width: 136px;
+        position: absolute;
+        top: 350px;
+        right: 14px;
+    }
+    .btn {
+        width: 62px;
+        height: 52px;
+        margin-top: 5px;
+        border-radius: 5px;
+        font-size: 20px;
+        font-weight: 400;
+        
+    }
+    .btn-func, .btn-operators {
+        
+        margin-left: 2px;    
+    }
+    #equalsBtn, #zero {
+        width: 130px;
+    }
+}
