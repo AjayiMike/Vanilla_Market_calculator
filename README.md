@@ -1,2 +1,2 @@
-*calcuator
+#calculator
 just a simple calculator built with the three basic web technologies
